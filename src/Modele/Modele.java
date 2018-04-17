@@ -1,75 +1,77 @@
 package Modele;
 
-import java.io.UnsupportedEncodingException;
-import java.rmi.dgc.Lease;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import java.awt.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import javax.xml.bind.DatatypeConverter;
+import javax.swing.*;
 
 //import Controlleur.Client;
 import Controlleur.ClientPar;
 //import Controlleur.Etat;
-import modele.BDD;
+import org.apache.commons.codec.digest.DigestUtils;
 
 public class Modele
 {
-	public static String sha1(String input) {
-	    String sha1 = null;
-	    try {
-	        MessageDigest msdDigest = MessageDigest.getInstance("SHA-1");
-	        msdDigest.update(input.getBytes("UTF-8"), 0, input.length());
-	        sha1 = DatatypeConverter.printHexBinary(msdDigest.digest());
-	    } catch (UnsupportedEncodingException | NoSuchAlgorithmException e) {
-	       
-	    }
-	    return sha1;
-	}
-	
-	public static String verifConnexion (String login , String mdp)
+	public static int verifConnexion (String login , String mdp)
 	{
-		mdp = sha1(mdp);
+		mdp = DigestUtils.sha1Hex(mdp);
+
+		ImageIcon logo = new ImageIcon(Modele.class.getResource("/Images/logo.png"));
+		Image image = logo.getImage();
+		Image newImage = image.getScaledInstance(100, 75, Image.SCALE_REPLICATE);
+
+		logo = new ImageIcon(newImage);
 		
-		String requete="SELECT id_user, email, password, type FROM user WHERE email = '" + login + "' AND password = '" + mdp +"'";
-		BDD uneBdd=new BDD ("localhost","paruline","root","");
+		String requete = "CALL connexion('"+login+"', '"+mdp+"')";
+
+		Bdd uneBdd = new Bdd ("localhost","paruline","root","");
+
+		int idUser = 0;
 	
 	
 		try
 		{
-		uneBdd.SeConnecter(); 
-				Statement unStat= uneBdd.getMaConnection().createStatement(); 
-				ResultSet unRes = unStat.executeQuery(requete);
-				if (unRes.next())
-				{
-					int nb=unRes.getInt("nb"); 
-					if (nb !=0) droits= unRes.getString("droits");
-						
+			uneBdd.seConnecter();
+			Statement unStat= uneBdd.getMaConnection().createStatement();
+
+			ResultSet unRes = unStat.executeQuery(requete);
+
+			if (unRes.next()) {
+				idUser = unRes.getInt("id_user");
+
+				if (idUser == 1) {
+					JOptionPane.showMessageDialog(null, "Bienvunue Administrateur, vous pouvez y accéder", "Connecté", JOptionPane.INFORMATION_MESSAGE, logo);
+				} else {
+					JOptionPane.showMessageDialog(null, "Vous n'avez pas les droits pour y accéder", "Droits insuffisant", JOptionPane.WARNING_MESSAGE);
 				}
-				uneBdd.SeConnecter();
-				unStat.close(); 
-				unRes.close();
+			}
+			uneBdd.seDeConnecter();
+			unStat.close();
+			unRes.close();
 		}
 		catch (SQLException exp)
 		{
-			System.out.println("Erreur"+requete);
+			System.out.println("Erreur " + requete);
 		}
-		return droits; 
+
+		return idUser;
 		}
+
+
    public static void insertClientpar (ClientPar unClientPar)  // qu'on puisse rajouter un client particulier
    {
 	   String requete = "insert into client  values (null, '"+unClientPar.getNom()+"','" +unClientPar.getAdresse()+"');";
-	   BDD uneBdd= new BDD ("localhost","Paruline ","root","");
+	   Bdd uneBdd= new Bdd ("localhost","Paruline ","root","");
 			   try
 	   {
-				   uneBdd.SeConnecter();
+				   uneBdd.seConnecter();
 				   Statement unStat=uneBdd.getMaConnection().createStatement();
 				   unStat.execute(requete);
 				   unStat.close();
-				   uneBdd.SeConnecter();
+				   uneBdd.seDeConnecter();
 				   }
 	   catch (SQLException exp)
 	   {
@@ -82,10 +84,10 @@ public class Modele
 	   ArrayList<ClientPar>ClientsPar=new ArrayList<ClientPar>();
    
 	   String requete ="select * from client ; " ; 
-	   BDD uneBdd= new BDD ("localhost","Paruline","root","");
+	   Bdd uneBdd = new Bdd ("localhost","Paruline","root","");
        try
 		   {
-					   uneBdd.SeConnecter();
+					   uneBdd.seConnecter();
 					   Statement unStat=uneBdd.getMaConnection().createStatement();
 					   ResultSet unRes=unStat.executeQuery(requete); 
 					   while (unRes.next())
@@ -100,7 +102,7 @@ public class Modele
 		   
        unStat.close();
        unRes.close(); 
-       uneBdd.SeDeconnecter();	
+       uneBdd.seDeConnecter();
    }
 
 	catch (SQLException exp)
@@ -112,14 +114,17 @@ public class Modele
    public static void deleteClient (ClientPar unClientPar )
    {
 	   String requete = "delete from client where idclient="   +unClientPar.getIdclient()  +";";
-	   BDD uneBdd= new BDD ("localhost","Paruline","root","");
+	   Bdd uneBdd= new Bdd ("localhost","Paruline","root","");
 	   try
        {
-		   uneBdd.SeConnecter();
+		   uneBdd.seConnecter();
+
 		   Statement unStat=uneBdd.getMaConnection().createStatement();
+
 		   unStat.execute(requete);
+
 		   unStat.close();
-		   uneBdd.SeConnecter();
+		   uneBdd.seDeConnecter();
 		   }
 		catch (SQLException exp)
 		{
@@ -130,14 +135,18 @@ public class Modele
    {
 	   String requete ="update client set nom ='"+unClientPar.getNom() +"', adresse ='"+unClientPar.getAdresse()+"'where idclient="
 	   		+ "" + unClientPar.getIdclient() +";";
-	   BDD uneBdd= new BDD ("localhost","Paruline","root","");
+
+	   Bdd uneBdd= new Bdd ("localhost","Paruline","root","");
+
 	   try
        {
-		   uneBdd.SeConnecter();
-		   Statement unStat=uneBdd.getMaConnection().createStatement();
+		   uneBdd.seConnecter();
+
+		   Statement unStat = uneBdd.getMaConnection().createStatement();
 		   unStat.execute(requete);
+
 		   unStat.close();
-		   uneBdd.SeDeconnecter();
+		   uneBdd.seDeConnecter();
 		   }
 		catch (SQLException exp)
 		{
@@ -149,10 +158,10 @@ public class Modele
    {
 	   String requete = "select *from client where" +" nom = '"+unClientPar.getNom()+"' and adresse = '"+ unClientPar.getAdresse()+"';";
 	   ClientPar leClientPar=null; 
-	  BDD uneBdd= new BDD ("localhost","Paruline","root","");
+	  Bdd uneBdd= new Bdd ("localhost","Paruline","root","");
       try
 		   {
-					   uneBdd.SeConnecter();
+					   uneBdd.seConnecter();
 					   Statement unStat=uneBdd.getMaConnection().createStatement();
 					   ResultSet unRes=unStat.executeQuery(requete); 
 					   if (unRes.next())
@@ -164,7 +173,7 @@ public class Modele
 		   
       unStat.close();
       unRes.close(); 
-      uneBdd.SeDeconnecter();	
+      uneBdd.seDeConnecter();
   }
 
 	catch (SQLException exp)

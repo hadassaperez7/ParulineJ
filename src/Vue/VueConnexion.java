@@ -83,25 +83,16 @@ public class VueConnexion extends JFrame implements ActionListener, KeyListener
 	public void traitement()
 	{
 		String login=this.textLogin.getText();
-		String mdp = new String (this.pwMdp.getPassword()); 
-		if ( login.equals("") || mdp.equals(""))   //si login ou mdp vide 
-		{
-			JOptionPane.showMessageDialog(this,"veuillez saisir vos identifiants");
+		String mdp = new String (this.pwMdp.getPassword());
+
+
+		if (login.isEmpty() || mdp.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Veuillez renseigner tous les champs.", "Informations incomplètes", JOptionPane.INFORMATION_MESSAGE);
 		}
-		else
-		{
-			//on verifie ds la bdd la connexion 
-			String droits=Modele.verifConnexion(login,mdp);
-			if (droits.equals(""))
-			{
-				JOptionPane.showMessageDialog(this,"erreur de la connexion","erreur",JOptionPane.ERROR_MESSAGE); 
-				this.textLogin.setText("");
-				this.pwMdp.setText("");
-			}
-			else
-			{
-				JOptionPane.showMessageDialog(this, "Bienvenue ", "connexion reussie", JOptionPane.INFORMATION_MESSAGE);
-				//appel de la fenetre principale
+		else {
+			int idUser = Modele.verifConnexion(login, mdp);
+
+			if (idUser == 1) {
 				Main.rendreVisible(false);
 				new VueGenerale();
 			}
