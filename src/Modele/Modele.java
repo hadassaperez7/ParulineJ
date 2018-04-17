@@ -48,6 +48,10 @@ public class Modele
 					JOptionPane.showMessageDialog(null, "Vous n'avez pas les droits pour y accéder", "Droits insuffisant", JOptionPane.WARNING_MESSAGE);
 				}
 			}
+			else {
+				JOptionPane.showMessageDialog(null, "Au moins un des deux identifiants sont incorrects", "Erreur de Connexion", JOptionPane.ERROR_MESSAGE);
+			}
+
 			uneBdd.seDeConnecter();
 			unStat.close();
 			unRes.close();
