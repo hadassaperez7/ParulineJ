@@ -3,6 +3,7 @@ package Vue;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -32,14 +33,14 @@ public class VueConnexion extends JFrame implements ActionListener, KeyListener
 	
 	public  VueConnexion() {
 		this.setTitle("Paruline");
-		this.setBounds(200,200,500,350);
+		this.setBounds(700,200,500,400); // position par rapport a l'ecran gauche , dehauteur , longeur , larguer 
 		this.setLayout(null);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.getContentPane().setBackground(Color.blue);
 		
 		//Construction du panel 
-		this.unPanel.setBounds (50,150,400,150); 
+		this.unPanel.setBounds (50,180,400,150); 
 		this.unPanel.setLayout(new GridLayout(3,2)); 
 		this.unPanel.setBackground ( Color.yellow); 
 		
@@ -55,19 +56,22 @@ public class VueConnexion extends JFrame implements ActionListener, KeyListener
 		this.add(this.unPanel);
 
 		//ajout du logo 
-		ImageIcon logo= new ImageIcon("src/image/logo.jpg"); 
+		ImageIcon logo= new ImageIcon(VueConnexion.class.getResource("/Images/logo.png")); 
+		Image image = logo.getImage();
+		Image newImage = image.getScaledInstance(300, 200, Image.SCALE_REPLICATE);
+		logo = new ImageIcon(newImage);
+		
 		JLabel lbLogo= new JLabel(logo); 
-		lbLogo.setBounds(50,20,400,120); 
+		lbLogo.setBounds(50,0,400,200); 
 		this.add(lbLogo);
 		
 		//Pr changer le logo de l'application
 		
-		ImageIcon web= new ImageIcon ("src/image/web.jpg");
+		ImageIcon web= new ImageIcon(VueConnexion.class.getResource("/Images/logo.png"));
 		this.setIconImage(web.getImage()); 
 		
 		
 		//rendre les bouttons exceutable 
-		
 		this.btAnnuler.addActionListener(this);
 		this.btSeConnecter.addActionListener(this);
 		//rendre le bouton entree applicable 
@@ -87,7 +91,7 @@ public class VueConnexion extends JFrame implements ActionListener, KeyListener
 
 
 		if (login.isEmpty() || mdp.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "Veuillez renseigner tous les champs.", "Informations incomplÃ¨tes", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Veuillez renseigner tous les champs.", "Informations incomplètes", JOptionPane.INFORMATION_MESSAGE);
 		}
 		else {
 			int idUser = Modele.verifConnexion(login, mdp);

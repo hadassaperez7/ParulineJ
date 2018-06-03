@@ -11,10 +11,10 @@ public class Main {
 	Main.uneConnexion.setVisible(action); 
 	}
 
-public static void main (String args[])
-{
-	Main.uneConnexion=new VueConnexion();
-
+	public static void main (String args[])
+	{
+		Main.uneConnexion=new VueConnexion();
 	
-}
+		
+	}
 }

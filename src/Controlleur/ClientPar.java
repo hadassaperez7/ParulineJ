@@ -2,44 +2,84 @@ package Controlleur;
 
 public class ClientPar{
 	
-	private int idclient; 
-	private String nom,adresse;
 	
-	public ClientPar ()
+	 
+	private String nom, prenom , email ,adresse , ville,telephone,cp;
+	
+	/*public ClientPar ()
 	{
-		this.idclient=0; 
 		this.nom="";
-		this.adresse=""; 
+		this.prenom="";
+		this.email="";
+		this.telephone="";
+		this.adresse="";
+		this.cp="";
+		this.ville="";
+		
 		}
-	public ClientPar(int idclient,String nom, String adresse)
+	public ClientPar(String Telephone , String cp ,String nom, String prenom, String email ,String adresse , String ville)
 	{
-		this.idclient=idclient; 
 		this.nom=nom;
-		this.adresse=adresse; 
-	}
-	public ClientPar (String nom, String adresse)
+		this.prenom=prenom;
+		this.email=email;
+		this.telephone=telephone;
+		this.adresse=adresse;
+		this.cp=cp;
+		this.ville=ville; 
+	}*/
+	public ClientPar (String nom, String prenom, String email ,String telephone, String adresse ,String cp ,String ville)
 	{
-		this.idclient=0; 
-		this.nom=nom;
-		this.adresse=adresse; 
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.telephone = telephone;
+		this.adresse = adresse;
+		this.cp = cp;
+		this.ville = ville;
 	}
-	public int getIdclient() {
-		return idclient;
+	
+	public String getTelephone() {
+		return telephone;
 	}
-	public void setIdclient(int idclient) {
-		this.idclient = idclient;
+	public void setTelephone(String telephone) {
+		telephone = telephone;
+	}
+	public String getcp() {
+		return cp;
+	}
+	public void setcp(String cp) {
+		cp= cp;
 	}
 	public String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
-		this.nom = nom;
+		nom = nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		prenom = prenom;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		email = email;
 	}
 	public String getAdresse() {
 		return adresse;
 	}
 	public void setAdresse(String adresse) {
-		this.adresse = adresse;
+		adresse = adresse;
 	}
-
+	public String getVille() {
+		return ville;
+	}
+	public void setVille(String ville) {
+		ville = ville;
+	}
+	
 }
+		

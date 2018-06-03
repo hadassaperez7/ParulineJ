@@ -8,7 +8,6 @@ public class Tableau extends AbstractTableModel
 	private Object[][] Donnees;    //matrice des donnes 
 	private String [] Entete ; // entete de la table 
 	
-	
      public Tableau (Object [][] Donnees , String [] Entete)
      {
     	 this.Donnees = Donnees; 

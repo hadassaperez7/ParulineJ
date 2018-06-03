@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="paruline@localhost" uuid="730f9c6d-9efe-4cad-a022-6bcfd9dadca6">
+    <data-source name="paruline@localhost" uuid="13222a41-ccad-431b-aa4f-1d20c031b2a1">
       <database-info product="MySQL" version="10.1.30-MariaDB" jdbc-version="4.2" driver-name="MariaDB connector/J" driver-version="2.2.1">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

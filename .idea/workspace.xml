@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d14fd6d-d5f1-46ea-9ecb-722bf38ef698" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/730f9c6d-9efe-4cad-a022-6bcfd9dadca6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/730f9c6d-9efe-4cad-a022-6bcfd9dadca6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/730f9c6d-9efe-4cad-a022-6bcfd9dadca6/storage_v2/_src_/schema/paruline.6PnrRg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/730f9c6d-9efe-4cad-a022-6bcfd9dadca6/storage_v2/_src_/schema/paruline.6PnrRg.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Controlleur/ClientPar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Controlleur/ClientPar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Controlleur/Tableau.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Controlleur/Tableau.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Modele/Modele.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Modele/Modele.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sql/paruline.sql" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sql/paruline.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/Prix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/VueAcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/VueClientPar$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/VueClientPar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Vue/VueClientPar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/VueClientPro.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Vue/VueClientPro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/VueConnexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Vue/VueConnexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Vue/VueGenerale.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Vue/VueGenerale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controlleur/ClientPar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controlleur/ClientPar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controlleur/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controlleur/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controlleur/Tableau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controlleur/Tableau.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modele/Modele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Modele.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sql/paruline.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sql/paruline.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/Prix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/VueAcc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/VueClientPar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/VueClientPar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/VueClientPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/VueClientPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/VueConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/VueConnexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/VueGenerale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/VueGenerale.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +41,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ParulineJ$Main.ic" NAME="Main Coverage Results" MODIFIED="1528028349667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Controlleur.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -57,26 +89,63 @@
       <file leaf-file-name="Modele.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Modele/Modele.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="51" column="155" selection-start-line="51" selection-start-column="155" selection-end-line="51" selection-end-column="155" />
+            <state relative-caret-position="433">
+              <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2232#2243#0" expanded="true" />
+                <element signature="e#3389#3400#0" expanded="true" />
+                <element signature="e#4652#4663#0" expanded="true" />
+                <element signature="e#6054#6067#0" expanded="true" />
+                <element signature="e#7301#7314#0" expanded="true" />
+                <element signature="e#8315#8321#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VueConnexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Vue/VueConnexion.java">
+      <file leaf-file-name="VueFournisseur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vue/VueFournisseur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+            <state relative-caret-position="345">
+              <caret line="142" column="67" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VueClientPro.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vue/VueClientPro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/13222a41-ccad-431b-aa4f-1d20c031b2a1/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="44" selection-start-column="44" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fournisseur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controlleur/Fournisseur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>System</find>
+      <find>System.out.println</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,6 +156,19 @@
         <option value="$PROJECT_DIR$/src/Modele/BDD.java" />
         <option value="$PROJECT_DIR$/src/Modele/Bdd.java" />
         <option value="$PROJECT_DIR$/src/Vue/VueConnexion.java" />
+        <option value="$PROJECT_DIR$/src/Controlleur/Prix.java" />
+        <option value="$PROJECT_DIR$/src/Controlleur/Accessoires.java" />
+        <option value="$PROJECT_DIR$/src/Vue/VuePrix.java" />
+        <option value="$PROJECT_DIR$/src/Vue/VueGenerale.java" />
+        <option value="$PROJECT_DIR$/src/Vue/VueAccessoires.java" />
+        <option value="$PROJECT_DIR$/src/Vue/VueFournisseur.java" />
+        <option value="$PROJECT_DIR$/src/Vue/VueClientPro.java" />
+        <option value="$PROJECT_DIR$/src/Controlleur/ClientPro.java" />
+        <option value="$PROJECT_DIR$/src/Controlleur/ClientPar.java" />
+        <option value="$PROJECT_DIR$/src/Vue/VueClientPar.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/13222a41-ccad-431b-aa4f-1d20c031b2a1/console.sql" />
+        <option value="$PROJECT_DIR$/src/Controlleur/Fournisseur.java" />
+        <option value="/8a9706c3/13222a41-ccad-431b-aa4f-1d20c031b2a1/schema/paruline/routine/getproviders@().sql" />
         <option value="$PROJECT_DIR$/src/Modele/Modele.java" />
       </list>
     </option>
@@ -97,40 +179,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="151" />
-    <option name="y" value="156" />
-    <option name="width" value="1423" />
-    <option name="height" value="784" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="Modele" type="cbb8eebc:String" user="Modele" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,6 +211,35 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="Controlleur" type="cbb8eebc:String" user="Controlleur" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ParulineJ" type="cbb8eebc:String" user="ParulineJ" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="Vue" type="cbb8eebc:String" user="Vue" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -172,7 +260,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MariaDB" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Desktop/Divers/BTS 2ème année/Développement/Cours/POO/Java/Intervention" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/../../../SDKs/NodeJS/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -272,45 +360,48 @@
       <workItem from="1523966073905" duration="292000" />
       <workItem from="1523966374165" duration="5515000" />
       <workItem from="1523972474310" duration="670000" />
+      <workItem from="1528020896821" duration="15547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6477000" />
+    <option name="totallyTimeSpent" value="22024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32922733" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005325" side_tool="true" weight="0.32915717" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.185836" />
       <window_info anchor="bottom" id="Dilbert" order="7" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16613418" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49827588" visible="true" weight="0.15761448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997722" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32915717" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.32915717" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.5017241" side_tool="true" weight="0.34061137" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32915717" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15974441" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32915717" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,11 +413,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Modele/Modele.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3389#3400#0" expanded="true" />
+            <element signature="e#4652#4663#0" expanded="true" />
+            <element signature="e#6054#6067#0" expanded="true" />
+            <element signature="e#7301#7314#0" expanded="true" />
+            <element signature="e#8315#8321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VueConnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="47" lean-forward="true" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2232#2243#0" expanded="true" />
+            <element signature="e#3389#3400#0" expanded="true" />
+            <element signature="e#4652#4663#0" expanded="true" />
+            <element signature="e#6054#6067#0" expanded="true" />
+            <element signature="e#7301#7314#0" expanded="true" />
+            <element signature="e#8315#8321#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -361,18 +478,153 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vue/VueConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+        <state relative-caret-position="15">
+          <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4f5df602-babe-4ec6-b2b1-1fa624fdad07/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="dbSrc:///8a9706c3/13222a41-ccad-431b-aa4f-1d20c031b2a1/schema/paruline/routine/updatepriceacc@(int(11),varchar(100),float(10,2),float(10,2)).sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controlleur/Prix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
+          <folding>
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://13222a41-ccad-431b-aa4f-1d20c031b2a1/schema/paruline/table/priceaccesso">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://13222a41-ccad-431b-aa4f-1d20c031b2a1/schema/paruline/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VueGenerale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VueAccessoires.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="174" column="20" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controlleur/Accessoires.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VuePrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="146" column="59" lean-forward="true" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///8a9706c3/13222a41-ccad-431b-aa4f-1d20c031b2a1/schema/paruline/routine/checkexistscity@(varchar(100),varchar(5)).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controlleur/ClientPro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controlleur/ClientPar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VueClientPar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VueClientPro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/13222a41-ccad-431b-aa4f-1d20c031b2a1/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controlleur/Fournisseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vue/VueFournisseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="142" column="67" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///8a9706c3/13222a41-ccad-431b-aa4f-1d20c031b2a1/schema/paruline/routine/getproviders@().sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modele/Modele.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="51" column="155" selection-start-line="51" selection-start-column="155" selection-end-line="51" selection-end-column="155" />
+        <state relative-caret-position="433">
+          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2232#2243#0" expanded="true" />
+            <element signature="e#3389#3400#0" expanded="true" />
+            <element signature="e#4652#4663#0" expanded="true" />
+            <element signature="e#6054#6067#0" expanded="true" />
+            <element signature="e#7301#7314#0" expanded="true" />
+            <element signature="e#8315#8321#0" expanded="true" />
           </folding>
         </state>
       </provider>
